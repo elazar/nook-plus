@@ -21,17 +21,24 @@ const search = () => {
 
 const filterByForm = event => {
     const { target } = event;
-    query[target.name] = target.type === "checkbox" ? target.checked : (target.value || null);
+    query[target.name] = target.value || null;
+    search();
+};
+
+const filterByDonated = event => {
+    const { target } = event;
+    query["donated"] = {
+        "": null,
+        "Yes": true,
+        "No": false,
+    }[target.value];
     search();
 };
 
 const clear = () => {
     document.getElementById("name").value = "";
-
-    document.getElementById("donated").checked = false;
-
+    document.getElementById("donated").value = "";
     reset();
-
     search();
 };
 
@@ -40,6 +47,15 @@ const checkbox = (name, label, onclick, checked) => (
         <input type="checkbox" id={ name } name={ name } onclick={ onclick } checked={ checked } />
         <label htmlFor={ name } className="ml-2">{ label }</label>
     </span>
+);
+
+const select = (name, label, values, onchange) => (
+    <select id={ name } name={ name } onchange={ onchange } className="mr-4 ml-4 mt-2 mb-2 p-2 border">
+        <option value="">{ label }</option>
+        { values.map(value => (
+        <option value={ value }>{ value }</option>
+        )) }
+    </select>
 );
 
 const toggleDonated = name => event => {
@@ -59,7 +75,7 @@ const view = () => Layout.view(
         </div>
         <div className="flex flex-wrap items-center justify-center mt-4 mb-4">
             <div className="p-4">
-                { checkbox("donated", "Donated", filterByForm) }
+                { select("donated", "Donated", [ "Yes", "No" ], filterByDonated) }
             </div>
         </div>
         <div className="flex flex-wrap justify-center">

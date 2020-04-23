@@ -26,8 +26,8 @@ const Fossils = {
             results = results.filter(fossil => fossil.name.toLowerCase().indexOf(name) !== -1);
         }
 
-        if (params.donated) {
-            results = results.filter(fossil => donated.indexOf(fossil.name) !== -1);
+        if (params.donated !== null) {
+            results = results.filter(fossil => (donated.indexOf(fossil.name) !== -1) === params.donated);
         }
 
         return results;
