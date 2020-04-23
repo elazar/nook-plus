@@ -58,7 +58,11 @@ const toggleCaught = name => event => {
 const isCaught = name => Critters.caught(name);
 
 const toggleDonated = name => event => {
-    Critters.donated(name, event.target.checked);
+    const { checked } = event.target;
+    if (checked) {
+        Critters.caught(name, checked);
+    }
+    Critters.donated(name, checked);
 };
 
 const isDonated = name => Critters.donated(name);
