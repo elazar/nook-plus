@@ -2,13 +2,12 @@
 
 Organizational app for players of [Animal Crossing: New Horizons](https://animalcrossing.fandom.com/wiki/Animal_Crossing%3A_New_Horizons).
 
-<img src="homescreen.png" alt="Nook Miles+ logo" />
+<img src="homescreen.png" alt="Nook Miles+ logo" width="256" height="256" />
 
 ## Installation
 
 ```sh
-docker-compose run composer install
-docker-compose run yarn install
+./scripts/install.sh
 ```
 
 ## Generating Data
@@ -26,11 +25,11 @@ docker-compose run yarn install
 ## Generating Icons
 
 ```sh
-./scripts/homescreen.sh
+./scripts/icons.sh
 ```
 
 ## Building
 
 ```sh
-docker-compose run yarn build
+./scripts/build.sh
 ```
