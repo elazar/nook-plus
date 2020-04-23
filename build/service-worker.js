@@ -3,8 +3,8 @@ const CACHE = "cache-and-update";
 const onOpen = cb => caches.open(CACHE).then(cb);
 
 const preCache = () => onOpen(cache => cache.addAll([
-    "./images",
-    "./js",
+    "./images/",
+    "./js/",
     "./favicon.ico",
     "./index.html",
     "./manifest.webmanifest",
