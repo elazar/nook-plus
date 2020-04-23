@@ -1,4 +1,8 @@
-navigator.serviceWorker.register("./service-worker.js", { scope: "./" });
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js", { scope: "./" });
+    });
+}
 
 const m = require("mithril");
 
