@@ -1,5 +1,5 @@
 navigator.serviceWorker.register("./service-worker.js", { scope: "./" });
-navigator.serviceWorker.ready.then(window.location.reload);
+navigator.serviceWorker.ready.then(location.reload);
 
 const m = require("mithril");
 
