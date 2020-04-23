@@ -9,5 +9,5 @@ docker-compose run imagemagick convert homescreen.png -background none -resize 1
 # https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
 # https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/#app-icon-sizes
 for d in 180 120 167 152 719; do
-    docker-compose run imagemagick convert homescreen.png -resize ${d}x${d} -background white build/images/touch/apple-touch-icon-${d}.png;
+    docker-compose run imagemagick convert homescreen.png -resize ${d}x${d} -flatten build/images/touch/apple-touch-icon-${d}.png;
 done
