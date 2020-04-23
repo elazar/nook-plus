@@ -1,0 +1,35 @@
+version: "3.1"
+
+services:
+
+  yarn:
+    image: node:12-alpine
+    container_name: yarn
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: production
+    entrypoint: [ "yarn" ]
+
+  php:
+    image: php:7.4-alpine
+    container_name: php
+    working_dir: /app
+    volumes:
+      - .:/app
+    entrypoint: [ "php" ]
+
+  composer:
+    image: composer
+    container_name: composer
+    working_dir: /app
+    volumes:
+      - .:/app
+
+  imagemagick:
+    image: v4tech/imagemagick
+    container_name: imagemagick
+    working_dir: /images
+    volumes:
+      - .:/images
