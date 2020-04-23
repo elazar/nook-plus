@@ -1,4 +1,4 @@
-navigator.serviceWorker.register("./js/service-worker.js", { scope: "../" });
+navigator.serviceWorker.register("./service-worker.js", { scope: "./" });
 navigator.serviceWorker.ready.then(document.location.reload);
 
 const m = require("mithril");
