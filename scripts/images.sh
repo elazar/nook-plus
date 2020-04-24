@@ -1,5 +1,5 @@
 #!/bin/bash -x
 
-for data in bugs fish fossils villagers; do
+for data in bugs crafting fish fossils villagers; do
     docker-compose run php scripts/images.php src/data/$data.json build/images/$data;
 done
