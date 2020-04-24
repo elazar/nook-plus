@@ -92,10 +92,10 @@ const view = () => Layout.view(
                             <span className="font-bold pr-2">Source</span>
                             { item.source }
                         </div>
-                        <div className="w-full">
+                        { item.price && <div className="w-full">
                             <span className="font-bold pr-2">Price</span>
                             { item.price }
-                        </div>
+                        </div> }
                         <div className="w-full mt-2">
                             <span className="m-2 whitespace-no-wrap">
                                 <input type="checkbox" id={ `need-${item.name}` } name={ `need-${item.name}` } onclick={ toggleNeed(item.name) } checked={ isNeeded(item.name) } />
