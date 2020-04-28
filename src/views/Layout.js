@@ -6,6 +6,7 @@ const pages = [
     { path: "/fossils", name: "Fossils" },
     { path: "/songs", name: "Songs" },
     { path: "/crafting", name: "Crafting" },
+    { path: "/recipes", name: "Recipes" },
     { path: "/settings", name: "Settings" },
 ];
 

@@ -9,6 +9,10 @@ if (!file_exists($path)) {
 
 $data = json_decode(file_get_contents($json));
 foreach ($data as $row) {
+    if (!$row->image) {
+        continue;
+    }
+
     $dst = $path . '/' . $row->name . '.png';
     echo $dst, PHP_EOL;
     file_put_contents($dst, file_get_contents($row->image));
