@@ -54,6 +54,8 @@ const toggleNeed = name => event => {
 
 const isNeeded = name => Recipes.need(name);
 
+const formatNumber = number => new Intl.NumberFormat().format(number);
+
 reset();
 
 const view = () => Layout.view(
@@ -89,7 +91,7 @@ const view = () => Layout.view(
                     <div className="flex flex-wrap">
                         { item.price && <div className="w-full">
                             <span className="font-bold pr-2">Price</span>
-                            { item.price }
+                            { formatNumber(item.price) }
                         </div> }
                         <div className="w-full">
                             <span className="font-bold pr-2">Category</span>
