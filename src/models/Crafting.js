@@ -27,7 +27,8 @@ const Crafting = {
         }
 
         if (params.always !== null) {
-            results = results.filter(item => item.always === params.always);
+            const always = params.always === "Year-round";
+            results = results.filter(item => item.always === always);
         }
 
         if (params.need !== null) {

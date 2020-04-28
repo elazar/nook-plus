@@ -25,12 +25,14 @@ const Songs = {
             results = results.filter(song => song.name.toLowerCase().indexOf(name) !== -1);
         }
 
-        if (params.request) {
-            results = results.filter(song => song.request);
+        if (params.request !== null) {
+            results = results.filter(song => song.request === params.request);
         }
 
-        if (params.owned) {
-            results = results.filter(song => ownedSongs.indexOf(song.name) !== -1);
+        if (params.owned !== null) {
+            results = results.filter(
+                song => (ownedSongs.indexOf(song.name) !== -1) === params.owned
+            );
         }
 
         return results;

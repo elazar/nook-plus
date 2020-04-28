@@ -15,7 +15,7 @@ const update = event => {
     Settings.set(all);
 };
 
-const view = () => Layout.view(
+const view = () => Layout(
     <div className="settings text-center">
         <h1 className="font-bold text-2xl mb-4">Settings</h1>
         <div className="flex flex-wrap items-center justify-center mt-4 mb-4">

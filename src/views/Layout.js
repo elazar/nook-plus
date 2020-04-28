@@ -10,7 +10,7 @@ const pages = [
     { path: "/settings", name: "Settings" },
 ];
 
-const view = content => (
+const Layout = content => (
     <div className="container mx-auto p-4">
         <nav>
             <ul className="flex flex-row flex-wrap justify-center mb-8">
@@ -25,4 +25,4 @@ const view = content => (
     </div>
 );
 
-module.exports = { view };
+module.exports = Layout;

@@ -87,16 +87,21 @@ const Critters = {
             results = results.filter(critter => critter.name.toLowerCase().indexOf(name) !== -1);
         }
 
-        if (params.caught) {
-            results = results.filter(critter => caught.indexOf(critter.name) !== -1);
+        if (params.caught !== null) {
+            results = results.filter(
+                critter => (caught.indexOf(critter.name) !== -1) === params.caught
+            );
         }
 
-        if (params.donated) {
-            results = results.filter(critter => donated.indexOf(critter.name) !== -1);
+        if (params.donated !== null) {
+            results = results.filter(
+                critter => (donated.indexOf(critter.name) !== -1) === params.donated
+            );
         }
 
-        if (params.catchable) {
-            results = results.filter(critter => Critters.catchable(critter).indexOf("Yes") !== -1);
+        if (params.catchable !== null) {
+            const catchable = params.catchable && "Yes" || "No";
+            results = results.filter(critter => Critters.catchable(critter).indexOf(catchable) !== -1);
         }
 
         return results;

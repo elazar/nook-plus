@@ -72,12 +72,16 @@ const Villagers = {
             results = results.filter(villager => villager.birthday.indexOf(params.month) === 0);
         }
 
-        if (params.resident) {
-            results = results.filter(villager => residents.indexOf(villager.name) !== -1);
+        if (params.resident !== null) {
+            results = results.filter(
+                villager => (residents.indexOf(villager.name) !== -1) === params.resident
+            );
         }
 
-        if (params.favorite) {
-            results = results.filter(villager => favorites.indexOf(villager.name) !== -1);
+        if (params.favorite !== null) {
+            results = results.filter(
+                villager => (favorites.indexOf(villager.name) !== -1) === params.favorite
+            );
         }
 
         return results;
