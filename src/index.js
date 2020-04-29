@@ -16,5 +16,6 @@ m.route(document.body, "/villagers", {
     "/crafting": { onmatch: () => import(/* webpackChunkName: "crafting" */ "./views/Crafting") },
     "/recipes": { onmatch: () => import(/* webpackChunkName: "recipes" */ "./views/Recipes") },
     "/furniture": { onmatch: () => import(/* webpackChunkName: "furniture" */ "./views/Furniture") },
+    "/clothing": { onmatch: () => import(/* webpackChunkName: "clothing" */ "./views/Clothing") },
     "/settings": { onmatch: () => import(/* webpackChunkName: "settings" */ "./views/Settings") },
 });
