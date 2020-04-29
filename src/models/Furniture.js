@@ -23,7 +23,7 @@ const Furniture = {
 
         if (params.name) {
             const name = params.name.toLowerCase();
-            results = results.filter(critter => critter.name.toLowerCase().indexOf(name) !== -1);
+            results = results.filter(item => item.name.toLowerCase().indexOf(name) !== -1);
         }
 
         if (params.need !== null) {
