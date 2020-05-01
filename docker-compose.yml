@@ -33,3 +33,16 @@ services:
     working_dir: /images
     volumes:
       - .:/images
+
+  server:
+    image: node:12-alpine
+    container_name: server
+    working_dir: /app
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: development
+    entrypoint: [ "yarn", "run", "server" ]
+
