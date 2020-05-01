@@ -1,13 +1,8 @@
 const all = require("../data/villagers.json");
 
-const RESIDENTS_KEY = "villagers-residents";
-const FAVORITES_KEY = "villagers-favorites";
-
-const storedResidents = localStorage.getItem(RESIDENTS_KEY);
-let residents = storedResidents ? JSON.parse(storedResidents) : [];
-
-const storedFavorites = localStorage.getItem(FAVORITES_KEY);
-let favorites = storedFavorites ? JSON.parse(storedFavorites) : [];
+const StoredList = require("./StoredList");
+const residents = StoredList("villagers-residents");
+const favorites = StoredList("villagers-favorites");
 
 const unique = array => array.reduce((unique, element) => unique.indexOf(element) === -1 ? unique.concat([element]) : unique, []);
 
@@ -32,20 +27,16 @@ const Villagers = {
 
     resident: (name, flag) => {
         if (flag === undefined) {
-            return residents.indexOf(name) !== -1;
+            return residents.contains(name);
         }
-
-        residents = flag ? residents.concat([name]) : residents.filter(resident => resident !== name);
-        localStorage.setItem(RESIDENTS_KEY, JSON.stringify(residents));
+        residents.set(name, flag);
     },
 
     favorite: (name, flag) => {
         if (flag === undefined) {
-            return favorites.indexOf(name) !== -1;
+            return favorites.contains(name);
         }
-
-        favorites = flag ? favorites.concat([name]) : favorites.filter(resident => resident !== name);
-        localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
+        favorites.set(name, flag);
     },
 
     search: params => {
@@ -74,13 +65,13 @@ const Villagers = {
 
         if (params.resident !== null) {
             results = results.filter(
-                villager => (residents.indexOf(villager.name) !== -1) === params.resident
+                villager => residents.contains(villager.name) === params.resident
             );
         }
 
         if (params.favorite !== null) {
             results = results.filter(
-                villager => (favorites.indexOf(villager.name) !== -1) === params.favorite
+                villager => favorites.contains(villager.name) === params.favorite
             );
         }
 

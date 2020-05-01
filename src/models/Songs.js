@@ -1,20 +1,16 @@
 const all = require("../data/songs.json");
 
-const OWNED_KEY = "songs-owned";
-
-const storedOwned = localStorage.getItem(OWNED_KEY);
-let ownedSongs = storedOwned ? JSON.parse(storedOwned) : [];
+const StoredList = require("./StoredList");
+const owned = StoredList("songs-owned");
 
 const Songs = {
     all: () => all,
 
     owned: (name, flag) => {
         if (flag === undefined) {
-            return ownedSongs.indexOf(name) !== -1;
+            return owned.contains(name);
         }
-
-        ownedSongs = flag ? ownedSongs.concat([name]) : ownedSongs.filter(song => song !== name);
-        localStorage.setItem(OWNED_KEY, JSON.stringify(ownedSongs));
+        owned.set(name, flag);
     },
 
     search: params => {
@@ -31,7 +27,7 @@ const Songs = {
 
         if (params.owned !== null) {
             results = results.filter(
-                song => (ownedSongs.indexOf(song.name) !== -1) === params.owned
+                song => ownedSongs.contains(song.name) === params.owned
             );
         }
 

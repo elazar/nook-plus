@@ -15,14 +15,9 @@ const fish = require("../data/fish.json").map(fish => {;
 const all = bugs.concat(fish);
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const CAUGHT_KEY = "critters-caught";
-const DONATED_KEY = "critters-donated";
-
-const storedCaught = localStorage.getItem(CAUGHT_KEY);
-let caught = storedCaught ? JSON.parse(storedCaught) : [];
-
-const storedDonated = localStorage.getItem(DONATED_KEY);
-let donated = storedDonated ? JSON.parse(storedDonated) : [];
+const StoredList = require("./StoredList");
+const caught = StoredList("critters-caught");
+const donated = StoredList("critters-donated");
 
 const pluralize = (quantity, unit) => `${quantity} ${unit}${quantity === 1 ? "" : "s"}`;
 
@@ -31,20 +26,16 @@ const Critters = {
 
     caught: (name, flag) => {
         if (flag === undefined) {
-            return caught.indexOf(name) !== -1;
+            return caught.contains(name);
         }
-
-        caught = flag ? caught.concat([name]) : caught.filter(critter => critter !== name);
-        localStorage.setItem(CAUGHT_KEY, JSON.stringify(caught));
+        caught.set(name, flag);
     },
 
     donated: (name, flag) => {
         if (flag === undefined) {
-            return donated.indexOf(name) !== -1;
+            return donated.contains(name);
         }
-
-        donated = flag ? donated.concat([name]) : donated.filter(critter => critter !== name);
-        localStorage.setItem(DONATED_KEY, JSON.stringify(donated));
+        donated.set(name, flag);
     },
 
     catchable: critter => {
@@ -89,13 +80,13 @@ const Critters = {
 
         if (params.caught !== null) {
             results = results.filter(
-                critter => (caught.indexOf(critter.name) !== -1) === params.caught
+                critter => caught.contains(critter.name) === params.caught
             );
         }
 
         if (params.donated !== null) {
             results = results.filter(
-                critter => (donated.indexOf(critter.name) !== -1) === params.donated
+                critter => donated.contains(critter.name) === params.donated
             );
         }
 

@@ -1,21 +1,17 @@
 const all = require("../data/clothing.json");
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const NEED_KEY = "clothing-need";
-
-const storedNeed = localStorage.getItem(NEED_KEY);
-let need = storedNeed ? JSON.parse(storedNeed) : [];
+const StoredList = require("./StoredList");
+const need = StoredList("clothing-need");
 
 const Clothing = {
     all: () => all,
 
     need: (name, flag) => {
         if (flag === undefined) {
-            return need.indexOf(name) !== -1;
+            return need.contains(name);
         }
-
-        need = flag ? need.concat([name]) : need.filter(item => item !== name);
-        localStorage.setItem(NEED_KEY, JSON.stringify(need));
+        need.set(name, flag);
     },
 
     search: params => {
@@ -27,7 +23,7 @@ const Clothing = {
         }
 
         if (params.need !== null) {
-            results = results.filter(item => (need.indexOf(item.name) !== -1) === params.need);
+            results = results.filter(item => need.contains(item.name) === params.need);
         }
 
         return results;
