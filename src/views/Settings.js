@@ -10,17 +10,21 @@ const hemispheres = {
     "south": "South",
 };
 
-const update = event => {
-    const { target } = event;
-    all[target.name] = target.value;
+const update = (name, value) => {
+    all[name] = value;
     Settings.set(all);
+};
+
+const updateFromEvent = event => {
+    const { target } = event;
+    update(target.name, target.value);
 };
 
 const generateUserId = event => {
     RemoteStore.getUserId().then(id => {
         document.getElementById("user_id").value = id;
+        update("user_id", value);
     });
-    //update(event);
 };
 
 const view = () => Layout(
@@ -29,7 +33,7 @@ const view = () => Layout(
         <div className="flex flex-col flex-wrap items-center justify-center mt-4 mb-4">
             <div className="pr-2 w-full">
                 <label htmlFor="hemisphere" className="font-bold mr-2">Hemisphere</label>
-                <select name="hemisphere" id="hemisphere" className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ update }>
+                <select name="hemisphere" id="hemisphere" className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ updateFromEvent }>
                 { Object.keys(hemispheres).map(value => (
                     <option value={ value } selected={ all["hemisphere"] === value }>{ hemispheres[value] }</option>
                 )) }
@@ -37,7 +41,7 @@ const view = () => Layout(
             </div>
             <div className="pr-2 w-full">
                 <label htmlFor="user_id" className="font-bold mr-2">User ID</label>
-                <input type="text" id="user_id" name="user_id" value={ all["user_id"] } className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ update } />
+                <input type="text" id="user_id" name="user_id" value={ all["user_id"] } className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ updateFromEvent } />
                 <button className="bg-blue-500 text-white p-2 rounded shadow mt-4 md:mt-0" onclick={ generateUserId }>Generate</button>
             </div>
         </div>
