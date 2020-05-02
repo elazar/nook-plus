@@ -1,4 +1,4 @@
-const BASE_URL = "https://nook-plus.matthewturland.com";
+const BASE_URL = "https://nook-plus.matthewturland.com:80";
 const request = (url, options) => fetch(`${BASE_URL}${url}`, options)
     .then(response => response.json());
 
