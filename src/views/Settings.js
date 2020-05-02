@@ -23,7 +23,7 @@ const updateFromEvent = event => {
 const generateUserId = event => {
     RemoteStore.getUserId().then(id => {
         document.getElementById("user_id").value = id;
-        update("user_id", value);
+        update("user_id", id);
     });
 };
 
