@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/app
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
     entrypoint: [ "yarn" ]
 
   php:
