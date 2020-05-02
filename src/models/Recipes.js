@@ -1,8 +1,8 @@
 const all = require("../data/recipes.json");
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const StoredList = require("./StoredList");
-const need = StoredList("recipes-need");
+const StoredListFactory = require("./StoredListFactory");
+const need = StoredListFactory.create("recipes-need");
 
 const unique = array => array.reduce((unique, element) => unique.indexOf(element) === -1 ? unique.concat([element]) : unique, []);
 

@@ -1,0 +1,32 @@
+const BASE_URL = "http://nook-plus.matthewturland.com";
+const request = (url, options) => fetch(`${BASE_URL}${url}`, options)
+    .then(response => response.json());
+
+const RemoteStore = {
+
+    getUserId: () => {
+        return request("/users", { method: "POST" });
+    },
+
+    getUser: id => {
+        return request(`/users/${id}`);
+    },
+
+    addValues: (id, key, values) => {
+        return request(`/users/${id}/${key}`, {
+            method: "POST",
+            body: JSON.stringify(values),
+        });
+    },
+
+    addValue: (id, key, value) => {
+        return request(`/users/${id}/${key}/${value}`, { method: "PUT" });
+    },
+
+    removeValue: (id, key, value) => {
+        return request(`/users/${id}/${key}/${value}`, { method: "DELETE" });
+    },
+
+};
+
+module.exports = RemoteStore;

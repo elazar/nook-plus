@@ -1,8 +1,8 @@
 const all = require("../data/fossils.json");
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const StoredList = require("./StoredList");
-const donated = StoredList("fossils-donated");
+const StoredListFactory = require("./StoredListFactory");
+const donated = StoredListFactory.create("fossils-donated");
 
 const Fossils = {
     all: () => all,
