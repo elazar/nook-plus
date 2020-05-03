@@ -1,5 +1,6 @@
+const m = require("mithril");
 const BASE_URL = "https://nook-plus.matthewturland.com:80";
-const request = (url, options) => fetch(`${BASE_URL}${url}`, options)
+const request = (url, options) => m.request(`${BASE_URL}${url}`, options)
     .then(response => response.status === 204 && response || response.json());
 
 const RemoteStore = {
