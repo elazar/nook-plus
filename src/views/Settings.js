@@ -41,7 +41,7 @@ const view = () => Layout(
             </div>
             <div className="pr-2 w-full">
                 <label htmlFor="user_id" className="font-bold mr-2">User ID</label>
-                <input type="text" id="user_id" name="user_id" value={ all["user_id"] } className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ updateFromEvent } />
+                <input type="text" id="user_id" name="user_id" size="39" value={ all["user_id"] } className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ updateFromEvent } />
                 <button className="bg-blue-500 text-white p-2 rounded shadow mt-4 md:mt-0" onclick={ generateUserId }>Generate</button>
             </div>
         </div>
