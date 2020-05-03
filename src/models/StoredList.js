@@ -5,30 +5,31 @@ const StoredList = key => {
 
     let list = [];
 
-    const remote = cb => {
-        const id = Settings.get("user_id");
-        id && cb(id);
-    };
-
     const set = (value, add) => {
         list = add ? list.concat([value]) : list.filter(existing => existing !== value);
         localStorage.setItem(key, JSON.stringify(list));
-        return remote(id => {
+
+        const id = Settings.get("user_id");
+        if (id) {
             const method = add ? "addValue" : "removeValue";
             RemoteStore[method](id, key, value);
-        });
+        }
     };
 
     return {
 
         load: () => {
-            const stored = localStorage.getItem(key);
-            list = stored ? JSON.parse(stored) : [];
-            return remote(id => {
-                return RemoteStore.getValues(id, key)
+            const id = Settings.get("user_id");
+            const promise = id
+                ? RemoteStore.getValues(id, key)
                     .then(values => values.forEach(
                         value => set(value, true)
-                    ));
+                    ))
+                : Promise.resolve();
+
+            return promise.then(() => {
+                const stored = localStorage.getItem(key);
+                list = stored ? JSON.parse(stored) : [];
             });
         },
 
