@@ -39,7 +39,7 @@ const generateUserId = event => {
             userId.placeholder = "Synchronizing...";
 
             return Synchronizer.synchronize();
-        });
+        })
         .then(() => {
             userId.value = id;
         })
