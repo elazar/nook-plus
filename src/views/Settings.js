@@ -40,7 +40,8 @@ const generateUserId = event => {
         .then(() => {
             userId.value = id;
         })
-        .catch(() => {
+        .catch(error => {
+            console.error(error);
             event.target.style.display = "";
         })
         .finally(() => {
