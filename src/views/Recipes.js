@@ -49,8 +49,8 @@ module.exports = Page({
         {
             name: "need",
             label: "Need",
-            onclick: (item, event) => Recipes.need(item.name, event.target.checked),
-            checked: item => Recipes.need(item.name),
+            onclick: (item, event) => Recipes.need.set(item.name, event.target.checked),
+            checked: item => Recipes.need.contains(item.name),
         },
     ],
 

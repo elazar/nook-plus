@@ -7,12 +7,7 @@ const need = StoredListFactory.create("clothing-need");
 const Clothing = {
     all: () => all,
 
-    need: (name, flag) => {
-        if (flag === undefined) {
-            return need.contains(name);
-        }
-        need.set(name, flag);
-    },
+    need,
 
     search: params => {
         let results = all;

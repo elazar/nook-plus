@@ -30,8 +30,8 @@ module.exports = Page({
         {
             name: "donated",
             label: "Donated",
-            onclick: (item, event) => Fossils.donated(item.name, event.target.checked),
-            checked: item => Fossils.donated(item.name),
+            onclick: (item, event) => Fossils.donated.set(item.name, event.target.checked),
+            checked: item => Fossils.donated.contains(item.name),
         },
     ],
 

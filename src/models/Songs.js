@@ -6,12 +6,7 @@ const owned = StoredListFactory.create("songs-owned");
 const Songs = {
     all: () => all,
 
-    owned: (name, flag) => {
-        if (flag === undefined) {
-            return owned.contains(name);
-        }
-        owned.set(name, flag);
-    },
+    owned,
 
     search: params => {
         let results = all;
@@ -27,7 +22,7 @@ const Songs = {
 
         if (params.owned !== null) {
             results = results.filter(
-                song => ownedSongs.contains(song.name) === params.owned
+                song => owned.contains(song.name) === params.owned
             );
         }
 

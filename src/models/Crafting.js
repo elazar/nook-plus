@@ -7,12 +7,7 @@ const need = StoredListFactory.create("crafting-need");
 const Crafting = {
     all: () => all,
 
-    need: (name, flag) => {
-        if (flag === undefined) {
-            return need.contains(name);
-        }
-        need.set(name, flag);
-    },
+    need,
 
     search: params => {
         let results = all;
@@ -28,7 +23,7 @@ const Crafting = {
         }
 
         if (params.need !== null) {
-            results = results.filter(item => (need.indexOf(item.name) !== -1) === params.need);
+            results = results.filter(item => need.contains(item.name) === params.need);
         }
 
         return results;

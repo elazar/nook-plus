@@ -13,12 +13,7 @@ const Recipes = {
     all: () => all,
     categories: () => categories,
 
-    need: (name, flag) => {
-        if (flag === undefined) {
-            return need.contains(name);
-        }
-        need.set(name, flag);
-    },
+    need,
 
     search: params => {
         let results = all;

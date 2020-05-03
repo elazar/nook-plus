@@ -2,6 +2,7 @@ const m = require("mithril");
 const Layout = require("./Layout");
 const Settings = require("../models/Settings");
 const RemoteStore = require("../models/RemoteStore");
+const Synchronizer = require("../models/Synchronizer");
 
 let all = Settings.get();
 
@@ -21,10 +22,34 @@ const updateFromEvent = event => {
 };
 
 const generateUserId = event => {
-    RemoteStore.getUserId().then(id => {
-        document.getElementById("user_id").value = id;
-        update("user_id", id);
-    });
+    event.target.style.display = "none";
+
+    const userId = document.getElementById("user_id");
+    userId.placeholder = "Generating...";
+    userId.disabled = true;
+
+    let id;
+
+    RemoteStore.getUserId()
+        .then(response => {
+            id = response;
+            update("user_id", id);
+
+            userId.value = "";
+            userId.placeholder = "Synchronizing...";
+
+            return Synchronizer.synchronize();
+        });
+        .then(() => {
+            userId.value = id;
+        })
+        .catch(() => {
+            event.target.style.display = "";
+        })
+        .finally(() => {
+            userId.placeholder = "";
+            userId.disabled = false;
+        });
 };
 
 const view = () => Layout(
@@ -42,7 +67,7 @@ const view = () => Layout(
             <div className="pr-2 w-full">
                 <label htmlFor="user_id" className="font-bold mr-2">User ID</label>
                 <input type="text" id="user_id" name="user_id" size="39" value={ all["user_id"] } className="mr-4 ml-4 mt-2 mb-2 p-2 border" onchange={ updateFromEvent } />
-                <button className="bg-blue-500 text-white p-2 rounded shadow mt-4 md:mt-0" onclick={ generateUserId }>Generate</button>
+                { !all["user_id"] && <button className="bg-blue-500 text-white p-2 rounded shadow mt-4 md:mt-0" onclick={ generateUserId }>Generate</button> }
             </div>
         </div>
     </div>

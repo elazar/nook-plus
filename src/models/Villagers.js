@@ -25,19 +25,9 @@ const Villagers = {
     personalities: () => personalities,
     months: () => months,
 
-    resident: (name, flag) => {
-        if (flag === undefined) {
-            return residents.contains(name);
-        }
-        residents.set(name, flag);
-    },
+    residents,
 
-    favorite: (name, flag) => {
-        if (flag === undefined) {
-            return favorites.contains(name);
-        }
-        favorites.set(name, flag);
-    },
+    favorites,
 
     search: params => {
         let results = all;

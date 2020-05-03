@@ -1,6 +1,6 @@
 const BASE_URL = "https://nook-plus.matthewturland.com:80";
 const request = (url, options) => fetch(`${BASE_URL}${url}`, options)
-    .then(response => response.json());
+    .then(response => response.status === 204 && response || response.json());
 
 const RemoteStore = {
 
@@ -10,6 +10,10 @@ const RemoteStore = {
 
     getUser: id => {
         return request(`/users/${id}`);
+    },
+
+    getValues: (id, key) => {
+        return request(`/users/${id}/${key}`);
     },
 
     addValues: (id, key, values) => {

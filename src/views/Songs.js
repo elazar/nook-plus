@@ -37,8 +37,8 @@ module.exports = Page({
         {
             name: "owned",
             label: "Owned",
-            onclick: (item, event) => Songs.owned(item.name, event.target.checked),
-            checked: item => Songs.owned(item.name),
+            onclick: (item, event) => Songs.owned.set(item.name, event.target.checked),
+            checked: item => Songs.owned.contains(item.name),
         },
     ],
 

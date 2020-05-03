@@ -1,0 +1,35 @@
+const Clothing = require("./Clothing");
+const Crafting = require("./Crafting");
+const Critters = require("./Critters");
+const Fossils = require("./Fossils");
+const Furniture = require("./Furniture");
+const Recipes = require("./Recipes");
+const RemoteStore = require("./RemoteStore");
+const Settings = require("./Settings");
+const Songs = require("./Songs");
+const Villagers = require("./Villagers");
+
+const Synchronizer = {
+    synchronize: () => {
+        const id = Settings.get("user_id");
+        const lists = [
+            Clothing.need,
+            Crafting.need,
+            Critters.caught,
+            Critters.donated,
+            Fossils.donated,
+            Furniture.need,
+            Recipes.need,
+            Songs.owned,
+            Villagers.residents,
+            Villagers.favorites,
+        ];
+
+        const promises = lists.map(
+            list => RemoteStore.addValues(id, list.key(), list.get())
+        );
+        return Promise.all(promises);
+    },
+};
+
+module.exports = Synchronizer;

@@ -12,7 +12,11 @@ const StoredList = key => {
         set: (value, add) => {
             list = add ? list.concat([value]) : list.filter(existing => existing !== value);
             localStorage.setItem(key, JSON.stringify(list));
-        }
+        },
+
+        get: () => list.slice(0),
+
+        key: () => key,
 
     };
 

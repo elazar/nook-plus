@@ -66,14 +66,14 @@ module.exports = Page({
         {
             name: "resident",
             label: "Resident",
-            onclick: (item, event) => Villagers.resident(item.name, event.target.checked),
-            checked: item => Villagers.resident(item.name),
+            onclick: (item, event) => Villagers.residents.set(item.name, event.target.checked),
+            checked: item => Villagers.residents.contains(item.name),
         },
         {
             name: "favorite",
             label: "Favorite",
-            onclick: (item, event) => Villagers.favorite(item.name, event.target.checked),
-            checked: item => Villagers.favorite(item.name),
+            onclick: (item, event) => Villagers.favorites.set(item.name, event.target.checked),
+            checked: item => Villagers.favorites.contains(item.name),
         },
     ],
 

@@ -44,8 +44,8 @@ module.exports = Page({
         {
             name: "need",
             label: "Need",
-            onclick: (item, event) => Crafting.need(item.name, event.target.checked),
-            checked: item => Crafting.need(item.name),
+            onclick: (item, event) => Crafting.need.set(item.name, event.target.checked),
+            checked: item => Crafting.need.contains(item.name),
         },
     ],
 

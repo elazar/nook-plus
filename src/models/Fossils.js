@@ -7,12 +7,7 @@ const donated = StoredListFactory.create("fossils-donated");
 const Fossils = {
     all: () => all,
 
-    donated: (name, flag) => {
-        if (flag === undefined) {
-            return donated.contains(name);
-        }
-        donated.set(name, flag);
-    },
+    donated,
 
     search: params => {
         let results = all;

@@ -24,19 +24,9 @@ const pluralize = (quantity, unit) => `${quantity} ${unit}${quantity === 1 ? "" 
 const Critters = {
     all: () => all,
 
-    caught: (name, flag) => {
-        if (flag === undefined) {
-            return caught.contains(name);
-        }
-        caught.set(name, flag);
-    },
+    caught,
 
-    donated: (name, flag) => {
-        if (flag === undefined) {
-            return donated.contains(name);
-        }
-        donated.set(name, flag);
-    },
+    donated,
 
     catchable: critter => {
         const hemisphere = Settings.get("hemisphere");

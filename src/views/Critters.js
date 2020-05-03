@@ -58,8 +58,8 @@ module.exports = Page({
         {
             name: "caught",
             label: "Caught",
-            onclick: (item, event) => Critters.caught(item.name, event.target.checked),
-            checked: item => Critters.caught(item.name),
+            onclick: (item, event) => Critters.caught.set(item.name, event.target.checked),
+            checked: item => Critters.caught.contains(item.name),
         },
         {
             name: "donated",
@@ -70,9 +70,9 @@ module.exports = Page({
                     const caught = document.getElementById(event.target.id.replace("donated", "caught"));
                     caught.checked || caught.click(event);
                 }
-                Critters.donated(item.name, checked);
+                Critters.donated.set(item.name, checked);
             },
-            checked: item => Critters.donated(item.name),
+            checked: item => Critters.donated.contains(item.name),
         },
     ],
 
