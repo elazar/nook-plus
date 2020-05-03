@@ -8,6 +8,11 @@ module.exports = Page({
 
     title: "Critters",
 
+    load: () => Promise.all([
+        Critters.caught.load(),
+        Critters.donated.load(),
+    ]),
+
     results: Critters.all(),
 
     search: Critters.search,

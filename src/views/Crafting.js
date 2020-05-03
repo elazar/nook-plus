@@ -6,6 +6,8 @@ module.exports = Page({
 
     title: "Crafting",
 
+    load: Crafting.need.load,
+
     results: Crafting.all(),
 
     search: Crafting.search,

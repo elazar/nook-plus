@@ -6,6 +6,8 @@ module.exports = Page({
 
     title: "Fossils",
 
+    load: Fossils.donated.load,
+
     results: Fossils.all(),
 
     search: Fossils.search,

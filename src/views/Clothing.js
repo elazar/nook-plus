@@ -8,6 +8,8 @@ module.exports = Page({
 
     title: "Clothing",
 
+    load: Clothing.need.load,
+
     results: Clothing.all(),
 
     search: Clothing.search,

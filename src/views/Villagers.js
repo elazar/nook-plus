@@ -6,6 +6,11 @@ module.exports = Page({
 
     title: "Villagers",
 
+    load: () => Promise.all([
+        Villagers.residents.load(),
+        Villagers.favorites.load(),
+    ]),
+
     results: Villagers.all(),
 
     search: Villagers.search,

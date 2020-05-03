@@ -6,6 +6,8 @@ module.exports = Page({
 
     title: "Recipes",
 
+    load: Recipes.need.load,
+
     results: Recipes.all(),
 
     search: Recipes.search,

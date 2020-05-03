@@ -1,7 +1,7 @@
 const all = require("../data/songs.json");
 
-const StoredListFactory = require("./StoredListFactory");
-const owned = StoredListFactory.create("songs-owned");
+const StoredList = require("./StoredList");
+const owned = StoredList("songs-owned");
 
 const Songs = {
     all: () => all,

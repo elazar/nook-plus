@@ -1,8 +1,8 @@
 const all = require("../data/villagers.json");
 
-const StoredListFactory = require("./StoredListFactory");
-const residents = StoredListFactory.create("villagers-residents");
-const favorites = StoredListFactory.create("villagers-favorites");
+const StoredList = require("./StoredList");
+const residents = StoredList("villagers-residents");
+const favorites = StoredList("villagers-favorites");
 
 const unique = array => array.reduce((unique, element) => unique.indexOf(element) === -1 ? unique.concat([element]) : unique, []);
 

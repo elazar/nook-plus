@@ -6,6 +6,8 @@ module.exports = Page({
 
     title: "Songs",
 
+    load: Songs.owned.load,
+
     columns: 4,
 
     results: Songs.all(),

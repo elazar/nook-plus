@@ -25,9 +25,10 @@ const Synchronizer = {
             Villagers.favorites,
         ];
 
-        const promises = lists.map(
-            list => RemoteStore.addValues(id, list.key(), list.get())
-        );
+        const promises = lists
+            .filter(list => list.get().length > 0)
+            .map(list => RemoteStore.addValues(id, list.key(), list.get()));
+
         return Promise.all(promises);
     },
 };

@@ -15,9 +15,9 @@ const fish = require("../data/fish.json").map(fish => {;
 const all = bugs.concat(fish);
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const StoredListFactory = require("./StoredListFactory");
-const caught = StoredListFactory.create("critters-caught");
-const donated = StoredListFactory.create("critters-donated");
+const StoredList = require("./StoredList");
+const caught = StoredList("critters-caught");
+const donated = StoredList("critters-donated");
 
 const pluralize = (quantity, unit) => `${quantity} ${unit}${quantity === 1 ? "" : "s"}`;
 

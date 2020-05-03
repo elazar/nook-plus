@@ -25,8 +25,8 @@ const generateUserId = event => {
     event.target.style.display = "none";
 
     const userId = document.getElementById("user_id");
-    userId.placeholder = "Generating...";
     userId.disabled = true;
+    userId.placeholder = "Generating...";
 
     let id;
 
@@ -34,10 +34,7 @@ const generateUserId = event => {
         .then(response => {
             id = response;
             update("user_id", id);
-
-            userId.value = "";
             userId.placeholder = "Synchronizing...";
-
             return Synchronizer.synchronize();
         })
         .then(() => {

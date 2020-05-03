@@ -7,6 +7,8 @@ function Page(config) {
     config.image = config.image || (() => config.title.toLowerCase());
     config.columns = (config.columns + 1) || 3;
 
+    const oninit = config.load;
+
     const defaultQuery = config.filters.reduce(
         (query, filter) => {
             query[filter.name] = null;
@@ -112,7 +114,7 @@ function Page(config) {
         </div>
     );
 
-    return { view };
+    return { oninit, view };
 }
 
 module.exports = Page;

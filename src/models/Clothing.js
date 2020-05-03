@@ -1,8 +1,8 @@
 const all = require("../data/clothing.json");
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
-const StoredListFactory = require("./StoredListFactory");
-const need = StoredListFactory.create("clothing-need");
+const StoredList = require("./StoredList");
+const need = StoredList("clothing-need");
 
 const Clothing = {
     all: () => all,
