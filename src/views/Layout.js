@@ -14,7 +14,7 @@ const pages = [
 
 const Layout = content => (
     <div className="container mx-auto p-4">
-        <header className="flex flex-row flex-wrap justify-center">
+        <header className="flex flex-row flex-wrap justify-center text-xl bg-gray-400">
             Like this app? Please
             <a href="https://www.buymeacoffee.com/DIkm1qe" target="_blank" className="ml-1 underline font-bold">support its creator</a>!
         </header>
