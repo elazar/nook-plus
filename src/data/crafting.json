@@ -1,1 +1,954 @@
-[{"name":"Tree branch","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Tree_branch","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/26\/NH-Treebranch.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326191935","source":"Shaking trees","price":"5","always":true},{"name":"Wood","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c4\/NH_Wood.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192052","source":"Use axe on a tree","price":"60","always":true},{"name":"Hardwood","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9f\/NH-Hardwood.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192143","source":"Use axe on a tree","price":"60","always":true},{"name":"Softwood","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9c\/NH-Softwood.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192221","source":"Use axe on a tree","price":"60","always":true},{"name":"Stone","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Stone","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/d2\/NH_Stone.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192310","source":"Hitting rocks Shaking trees Fishing Balloon presents","price":"75","always":true},{"name":"Clay","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Clay_(crafting_material)","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/cf\/NH-Material_Clay.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192353","source":"Hitting rocks Balloon presents","price":"100","always":true},{"name":"Iron nugget","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Iron_nugget","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/5d\/NH_Ironnugget.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192456","source":"Hitting rocks Balloon presents","price":"375","always":true},{"name":"Gold nugget","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Gold_nugget","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1a\/NH-gold_nugget.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192540","source":"Hitting rocks Balloon presents","price":"10,000","always":true},{"name":"Acorn","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Acorn","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/25\/NH-Material_acorn.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192625","source":"Shaking hardwood trees","price":"200","always":true},{"name":"Pinecone","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Pinecone","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/0b\/NH-Material_pinecone.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326192801","source":"Shaking cedar trees","price":null,"always":true},{"name":"Bamboo piece","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Bamboo_piece","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/5c\/NH_Bamboopiece.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326193925","source":"Use axe on bamboo","price":"80","always":true},{"name":"Young spring bamboo","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Young_spring_bamboo","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e5\/NH-Young_spring_bamboo.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326193947","source":"Use axe on bamboo","price":"200","always":true},{"name":"Bamboo shoot","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Bamboo","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/bd\/Bamboo_on_the_ground.jpg\/revision\/latest\/scale-to-width-down\/100?cb=20150814213508","source":"Digging near bamboo","price":"250","always":true},{"name":"Clump of weeds","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Clump_of_weeds","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/62\/NH_Weed.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326194017","source":"Pulling off of ground","price":"10","always":true},{"name":"Misc. Flowers","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Flowers","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/68\/All_Flowers.JPG\/revision\/latest\/scale-to-width-down\/100?cb=20130616171155","source":"Pulling off of ground","price":null,"always":true},{"name":"Misc. Fruit","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Fruit","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/dd\/NH-Fruit-cherry.png\/revision\/latest\/scale-to-width-down\/100?cb=20200327062700","source":"Shaking trees Purchasing","price":"100 (native fruit), 250 (coconuts), 500 (foreign fruit)","always":true},{"name":"Wasp nest","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Wasp","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/49\/NH-Wasp_nest.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326194037","source":"Shaking trees","price":"300","always":true},{"name":"Misc. Trash","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Trash","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/7c\/NH-Old_tire.png\/revision\/latest?cb=20200324081851","source":"Fishing","price":"10","always":true},{"name":"Misc. Clothing","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Clothes","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/60\/Shirt_%28New_Leaf_icon%29.PNG\/revision\/latest?cb=20140916214253","source":"Crafting Shaking trees Popping balloons Purchasing","price":"Variable","always":true},{"name":"Misc. Furniture","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Furniture","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/12\/NH-Furniture-icon.png\/revision\/latest?cb=20200324081831","source":"Crafting Shaking trees Popping balloons Purchasing","price":"Variable","always":true},{"name":"Misc. Tools","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Tools_(New_Horizons)","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/f8\/NH-Axe.png\/revision\/latest\/scale-to-width-down\/100?cb=20200325181451","source":"Crafting Purchasing","price":"Variable","always":true},{"name":"Fossil","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Fossil","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/22\/NH-Fossil_item.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326234113","source":"Digging with Shovel","price":"100 (unassessed), Variable (assessed)","always":true},{"name":"Star fragment","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Star_fragment","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/96\/NH-Star_fragment.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326194818","source":"On beach the day after wishing on a star","price":"250","always":true},{"name":"Large star fragment","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Large_star_fragment","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9e\/NH-Large_star_fragment.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326194837","source":"On beach the day after wishing on a star","price":"2,500","always":true},{"name":"Misc. Shells","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Shell","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/3\/38\/Conch.jpg\/revision\/latest?cb=20100629003733","source":"On beach","price":"60-900","always":true},{"name":"Manila Clam","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Manila_Clam","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/70\/NH-Material_Manila_Clam.png\/revision\/latest?cb=20200404200723","source":"Digging on beaches where water is shooting out of sand","price":"60","always":true},{"name":"Cherry-blossom petal","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Cherry-blossom_petal","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/cf\/NH-Cherry-blossom_petal.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326195619","source":"Caught with a net during cherry-blossom season","price":"200","always":false},{"name":"Maple leaf","link":"https:\/\/animalcrossing.fandom.com","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/d9\/NH-maple_leaf-icon.png\/revision\/latest\/scale-to-width-down\/100?cb=20200423202131","source":"Caught with a net during Autumn","price":"200","always":false},{"name":"Misc. Eggs","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Egg","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/7f\/NH-sky_egg-icon.png\/revision\/latest?cb=20200401165931","source":"Digging Hitting rocks Shaking trees Hitting trees with axes Popping balloons Fishing","price":"200","always":false},{"name":"Mushrooms","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Mushroom","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c2\/NH-rare_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/100?cb=20200423201615","source":"On the ground under trees during Autumn","price":null,"always":false},{"name":"Ornaments","link":"https:\/\/animalcrossing.fandom.com","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1e\/NH-gold_ornament-icon.png\/revision\/latest\/scale-to-width-down\/100?cb=20200423201445","source":"Shaking trees during Winter","price":null,"always":false},{"name":"Rusted part","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Rusted_part","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/68\/NH-Rusted_part.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326194057","source":"Recycling bin after a Gulliver visit or by not turning the Communicator Parts into Gulliver before the next day.","price":"10","always":false},{"name":"Snowflakes","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Snowflake","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/79\/NH-large_snowflake-icon.png\/revision\/latest\/scale-to-width-down\/100?cb=20200423201500","source":"Caught with a net during Winter","price":null,"always":false},{"name":"Summer Shell","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Shell","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/0f\/NH-summer_shell_icon.png\/revision\/latest\/scale-to-width-down\/100?cb=20200407141927","source":"On the beach during Summer","price":null,"always":false},{"name":"Misc. Zodiac star fragments","link":"https:\/\/animalcrossing.fandom.com\/wiki\/Zodiac_star_fragment","image":"https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/89\/NH-Leo_star_fragment.png\/revision\/latest\/scale-to-width-down\/100?cb=20200326195823","source":"On beach the day after wishing on a star (type depends on astrological cycle)","price":null,"always":false}]
+[
+    {
+        "name": "Tree branch",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Tree_branch",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/d6\/NH-Icon-Crafting_material-Branch.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427152423",
+        "source": "Shaking trees",
+        "price": "5",
+        "always": true
+    },
+    {
+        "name": "Wood",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/50\/NH-Icon-Crafting_material-Wood.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427152543",
+        "source": "Use axe on a tree",
+        "price": "60",
+        "always": true
+    },
+    {
+        "name": "Hardwood",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c6\/NH-Icon-Crafting_material-Hardwood.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427152616",
+        "source": "Use axe on a tree",
+        "price": "60",
+        "always": true
+    },
+    {
+        "name": "Softwood",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Wood_(New_Horizons)",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/f2\/NH-softwood-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010926",
+        "source": "Use axe on a tree",
+        "price": "60",
+        "always": true
+    },
+    {
+        "name": "Stone",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Stone",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/01\/NH-stone-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012041",
+        "source": "Hitting rocks, Shaking trees, Fishing, Balloon presents",
+        "price": "75",
+        "always": true
+    },
+    {
+        "name": "Clay",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Clay_(crafting_material)",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/2a\/NH-clay-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414011942",
+        "source": "Hitting rocks, Balloon presents",
+        "price": "100",
+        "always": true
+    },
+    {
+        "name": "Iron nugget",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Iron_nugget",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/fa\/NH-iron_nugget-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012022",
+        "source": "Hitting rocks, Balloon presents",
+        "price": "375",
+        "always": true
+    },
+    {
+        "name": "Gold nugget",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Gold_nugget",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/08\/NH-gold_nugget-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015430",
+        "source": "Hitting rocks, Balloon presents",
+        "price": "10, 000",
+        "always": true
+    },
+    {
+        "name": "Bamboo piece",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Bamboo_piece",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/ae\/NH-bamboo_piece-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010828",
+        "source": "Use axe on bamboo",
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Bamboo shoot",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Bamboo",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/79\/NH-bamboo_shoot-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015501",
+        "source": "Digging near bamboo",
+        "price": "250",
+        "always": true
+    },
+    {
+        "name": "Clump of weeds",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Clump_of_weeds",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/13\/NH-Icon-Weed.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427153009",
+        "source": "Pulled off ground",
+        "price": "10, Can be sold to Leif for 20",
+        "always": true
+    },
+    {
+        "name": "Wasp nest",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Wasp",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c0\/NH-wasp_nest-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414011312",
+        "source": "Shaking trees",
+        "price": "300",
+        "always": true
+    },
+    {
+        "name": "Communicator part",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/7a\/NH-Icon-Communicator_part.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427170718",
+        "source": "Found by digging into spots at the beach where water squirts out of the ground during Gulliver's visit when the player is asked to fix his phone",
+        "price": "20",
+        "always": true
+    },
+    {
+        "name": "Rusted part",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Rusted_part",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/99\/NH-rusted_part-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015221",
+        "source": "Recycling bin after a Gulliver visit or by not turning the Communicator Parts into Gulliver before the next day",
+        "price": "10",
+        "always": true
+    },
+    {
+        "name": "Boot",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Boot",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1b\/NH-boot-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010450",
+        "source": "Fishing",
+        "price": "10",
+        "always": true
+    },
+    {
+        "name": "Empty can",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9b\/NH-empty_can-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010516",
+        "source": "Fishing",
+        "price": "10",
+        "always": true
+    },
+    {
+        "name": "Old tire",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/b4\/NH-old_tire-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015144",
+        "source": "Fishing",
+        "price": "10",
+        "always": true
+    },
+    {
+        "name": "Apple",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/5d\/NH-Icon-Fruit-Apple.png\/revision\/latest\/scale-to-width-down\/50?cb=20200427164441",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "100 native, 500 foreign",
+        "always": true
+    },
+    {
+        "name": "Cherry",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/bf\/NH-cherry-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010531",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "100 native, 500 foreign",
+        "always": true
+    },
+    {
+        "name": "Coconut",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/b2\/NH-coconut-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010546",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "250",
+        "always": true
+    },
+    {
+        "name": "Orange",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/4f\/NH-orange-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414011924",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "100 native, 500 foreign",
+        "always": true
+    },
+    {
+        "name": "Peach",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/ff\/NH-peach-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012353",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "100 native, 500 foreign",
+        "always": true
+    },
+    {
+        "name": "Pear",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/fe\/NH-Pear-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012420",
+        "source": "Dodo Airlines Mystery tour",
+        "price": "100 native, 500 foreign",
+        "always": true
+    },
+    {
+        "name": "Black cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/7f\/NH-black_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010804",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Black lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/84\/NH-black_lilies-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014729",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Black roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/70\/NH-black_roses-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014535",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Black tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/2e\/NH-black_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015020",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Blue hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/a7\/NH-blue_hyacinth_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141804",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Blue pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/de\/NH-Icon-Blue_pansies.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505161428",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Blue roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/0c\/NH-blue_roses-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014604",
+        "source": null,
+        "price": "1, 000",
+        "always": true
+    },
+    {
+        "name": "Blue windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9c\/NH-blue_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004935",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Green mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/fc\/NH-green_mums-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014344",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Orange cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/f9\/NH-orange_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010731",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/77\/NH-orange_hyacinth_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141822",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/2a\/NH-Icon-Orange_lilies.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505162216",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/4b\/NH-Icon-Orange_pansies.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505162356",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c1\/NH-Icon-Orange_roses.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505162506",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/01\/NH-orange_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015000",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Orange windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/60\/NH-orange_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004736",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Pink cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e4\/NH-pink_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010708",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/75\/NH-pink_hyacinths-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414011630",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/79\/NH-pink_lilies-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014651",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e8\/NH-pink_mum_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141850",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/ad\/NH-pink_rose_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141856",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/4f\/NH-pink_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014939",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Pink windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/95\/NH-pink_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004847",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Purple hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/a2\/NH-purple_hyacinths-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200429032608",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Purple mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/3\/33\/NH-purple_mum_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141900",
+        "source": null,
+        "price": "80",
+        "always": true
+    },
+    {
+        "name": "Purple pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/83\/NH-purple_pansies-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012319",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Purple roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/45\/NH-purple_roses-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014508",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Purple tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/a5\/NH-purple_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014308",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Purple windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/6c\/NH-purple_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004913",
+        "source": null,
+        "price": "240",
+        "always": true
+    },
+    {
+        "name": "Red cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/7a\/NH-red_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010628",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/91\/NH-red_hyacinth_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141905",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/57\/NH-red_lily_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141910",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/14\/NH-red_mum_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141914",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/23\/NH-red_pansy_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141918",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/94\/NH-red_rose_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141923",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/94\/NH-red_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014822",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Red windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9d\/NH-red_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004717",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/45\/NH-white_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010606",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/8b\/NH-white_hyacinth_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141932",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/79\/NH-white_lily_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141938",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1f\/NH-white_mum_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141942",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/98\/NH-white_pansy_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141949",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/22\/NH-white_rose_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141957",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/05\/NH-white_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014907",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "White windflowers",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/54\/NH-white_windflowers-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414004536",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow cosmos",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/2a\/NH-yellow_cosmos-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010649",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow hyacinths",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/95\/NH-yellow_hyacinths-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414011344",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow lilies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/6f\/NH-yellow_lily_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407142003",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow mums",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/9e\/NH-yellow_mum_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407142009",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow pansies",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/96\/NH-yellow_pansies-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012157",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow roses",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/67\/NH-yellow_rose_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407142014",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Yellow tulips",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/07\/NH-yellow_tulips-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414014848",
+        "source": null,
+        "price": "40",
+        "always": true
+    },
+    {
+        "name": "Conches",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/bc\/NH-conch-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012854",
+        "source": "Found at the beach",
+        "price": "700",
+        "always": true
+    },
+    {
+        "name": "Coral",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/88\/NH-coral-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012655",
+        "source": "Found at the beach",
+        "price": "500",
+        "always": true
+    },
+    {
+        "name": "Cowrie",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e9\/NH-cowries-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012824",
+        "source": "Found at the beach",
+        "price": "60",
+        "always": true
+    },
+    {
+        "name": "Giant clam",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/3\/35\/NH-giant_clam-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012635",
+        "source": "Found at the beach",
+        "price": "900",
+        "always": true
+    },
+    {
+        "name": "Manila Clam",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Manila_Clam",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/4c\/NH-manila_clam-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414015111",
+        "source": "Use the Shovel where water is shooting out of sand",
+        "price": "60",
+        "always": true
+    },
+    {
+        "name": "Sand dollar",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e9\/NH-sand_dollar-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012802",
+        "source": "Found at the beach",
+        "price": "120",
+        "always": true
+    },
+    {
+        "name": "Sea snail",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/6d\/NH-snail_shell-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012739",
+        "source": "Found at the beach",
+        "price": "180",
+        "always": true
+    },
+    {
+        "name": "Venus comb",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c8\/NH-venus_comb-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012720",
+        "source": "Found at the beach",
+        "price": "300",
+        "always": true
+    },
+    {
+        "name": "Star fragment",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Star_fragment",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c2\/NH-star_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013012",
+        "source": "Beach after wishing on a meteor shower",
+        "price": "250",
+        "always": true
+    },
+    {
+        "name": "Large star fragment",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Large_star_fragment",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/8\/83\/NH-large_star_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013038",
+        "source": "Beach after wishing on a meteor shower",
+        "price": "2, 500",
+        "always": true
+    },
+    {
+        "name": "Capricorn fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/ab\/NH-Capricornus_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013600",
+        "source": "Beach after wishing on a meteor shower (December 22nd - January 19th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Aquarius fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/43\/NH-Aquarius_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013426",
+        "source": "Beach after wishing on a meteor shower (January 20th - February 18th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Pisces fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1e\/NH-Pisces_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013728",
+        "source": "Beach after wishing on a meteor shower (February 19th - March 20th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Aries fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/dc\/NH-Aries_star_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013112",
+        "source": "Beach after wishing on a meteor shower (March 21st - April 19th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Taurus fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/23\/NH-Taurus_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013847",
+        "source": "Beach after wishing on a meteor shower (April 20th - May 20th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Gemini fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1b\/NH-Gemini_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013624",
+        "source": "Beach after wishing on a meteor shower (May 21st - June 20th)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Cancer fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/be\/NH-Cancer_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013528",
+        "source": "Beach after wishing on a meteor shower (June 21st - July 22nd)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Leo fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/58\/NH-Leo_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013644",
+        "source": "Beach after wishing on a meteor shower (July 23rd - August 22nd)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Virgo fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/f5\/NH-Virgo_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013908",
+        "source": "Beach after wishing on a meteor shower (August 23rd - September 22nd)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Libra fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/ae\/NH-Libra_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013703",
+        "source": "Beach after wishing on a meteor shower (September 23rd - October 22nd)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Scorpio fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/59\/NH-Scorpio_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013828",
+        "source": "Beach after wishing on a meteor shower (October 23rd - November 21st)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Sagittarius fragment",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/a9\/NH-Sagittarius_fragment-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414013800",
+        "source": "Beach after wishing on a meteor shower (November 22nd - December 21st)",
+        "price": "500",
+        "always": false
+    },
+    {
+        "name": "Cherry-blossom petal",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Cherry-blossom_petal",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/23\/NH-cherry-blossom_petal-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414012614",
+        "source": "Caught with a net during cherry-blossom season",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Young spring bamboo",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Young_spring_bamboo",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/b\/b4\/NH-young_spring_bamboo-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200414010849",
+        "source": "Use axe on bamboo during spring",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Earth egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c3\/NH-Icon-Earth_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505174431",
+        "source": "Dig cracks in ground during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Leaf egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/3\/3c\/NH-Icon-Leaf_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505174910",
+        "source": "Shake trees during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Sky egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/af\/NH-Icon-Sky_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505175113",
+        "source": "Pop floating balloons during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Stone egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/49\/NH-Icon-Stone_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505175237",
+        "source": "Hit rocks during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Water egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/4\/45\/NH-Icon-Water_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505175407",
+        "source": "Catch fish during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Wood egg",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/6\/60\/NH-Icon-Wood_egg.png\/revision\/latest\/scale-to-width-down\/50?cb=20200505175518",
+        "source": "Chop trees during the Bunny Day event",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Summer Shell",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Shell",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/0\/0f\/NH-summer_shell_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141927",
+        "source": "On the beach during Summer",
+        "price": "600",
+        "always": false
+    },
+    {
+        "name": "Acorn",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Acorn",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/d4\/NH-acorn_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141759",
+        "source": "Shaking hardwood trees during autumn",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Pinecone",
+        "link": "https:\/\/animalcrossing.fandom.com\/wiki\/Pinecone",
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/5d\/NH-pinecone_icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200407141844",
+        "source": "Shaking cedar trees during autumn",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Maple leaf",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/d\/d9\/NH-maple_leaf-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423202131",
+        "source": "Caught with a net during Autumn",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Rare mushroom",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/c\/c2\/NH-rare_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201615",
+        "source": "On the ground during Mushrooming Season",
+        "price": "16, 000",
+        "always": false
+    },
+    {
+        "name": "Elegant mushroom",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/2\/25\/NH-elegant_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201510",
+        "source": "On the ground during Mushrooming Season",
+        "price": "10, 000",
+        "always": false
+    },
+    {
+        "name": "Flat mushroom",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/9\/93\/NH-flat_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201611",
+        "source": "On the ground during Mushrooming Season",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Round mushroom",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e1\/NH-round_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201602",
+        "source": "On the ground during Mushrooming Season",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Skinny mushroom",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/e\/e7\/NH-skinny_mushroom-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201606",
+        "source": "On the ground during Mushrooming Season",
+        "price": "300",
+        "always": false
+    },
+    {
+        "name": "Snowflake",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/f\/f9\/NH-snowflake-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201505",
+        "source": "Caught with a net during Winter",
+        "price": "200",
+        "always": false
+    },
+    {
+        "name": "Large snowflake",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/7\/79\/NH-large_snowflake-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201500",
+        "source": "Caught with a net during Winter",
+        "price": "2500",
+        "always": false
+    },
+    {
+        "name": "Blue ornament",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/a\/a3\/NH-blue_ornament-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201451",
+        "source": "Shaking trees during Festive Season",
+        "price": "50",
+        "always": false
+    },
+    {
+        "name": "Gold ornaments",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/1\/1e\/NH-gold_ornament-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201445",
+        "source": "Shaking trees during Festive Season",
+        "price": "50",
+        "always": false
+    },
+    {
+        "name": "Red ornament",
+        "link": null,
+        "image": "https:\/\/vignette.wikia.nocookie.net\/animalcrossing\/images\/5\/56\/NH-red_ornament-icon.png\/revision\/latest\/scale-to-width-down\/50?cb=20200423201455",
+        "source": "Shaking trees during Festive Season",
+        "price": "50",
+        "always": false
+    }
+]
