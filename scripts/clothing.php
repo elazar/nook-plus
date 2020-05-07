@@ -35,7 +35,7 @@ $parse_longform = function ($text) {
     $text = preg_replace('/\s*<br( \/)?>\s*/', ', ', $text);
     $text = preg_replace('/<[^>]+>/', '', $text);
     $text = preg_replace('/(\s*,\s*)+/', ', ', $text);
-    $text = trim($text, " \t\n,");
+    $text = trim($text, " \t\n,|-");
     $text = html_entity_decode($text);
     if ($text === 'N/A' || $text === '*') {
         return null;
@@ -80,4 +80,4 @@ foreach ($pages as $page) {
     }
 }
 
-echo json_encode($rows);
+echo json_encode($rows, \JSON_PRETTY_PRINT);
