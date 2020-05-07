@@ -67,4 +67,4 @@ foreach ($multi->filter('tr') as $tr) {
     $rows[] = $row;
 }
 
-echo json_encode($rows);
+echo json_encode($rows, \JSON_PRETTY_PRINT);
