@@ -91,4 +91,4 @@ foreach ($south->filter('tr') as $tr) {
     );
 }
 
-echo json_encode($rows);
+echo json_encode($rows, \JSON_PRETTY_PRINT);
