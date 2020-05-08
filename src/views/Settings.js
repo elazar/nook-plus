@@ -63,6 +63,10 @@ const view = () => Layout(
                 </select>
             </div>
             <div className="pr-2 mt-4 w-full">
+                <h2 className="font-bold text-xl">Sync</h2>
+                <p><a href="https://www.buymeacoffee.com/p/61327" className="underline">How does this work?</a></p>
+            </div>
+            <div className="pr-2 mt-4 w-full">
                 <input type="text" id="user_id" name="user_id" value={ all["user_id"] } placeholder="User ID" className="p-2 border" onchange={ updateFromEvent } />
             </div>
             <div className="pr-2 mt-2 w-full">
