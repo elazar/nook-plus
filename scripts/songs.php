@@ -9,22 +9,27 @@ use Symfony\Component\HttpClient\HttpClient;
 $browser = new HttpBrowser(HttpClient::create());
 $browser->request('GET', 'https://animalcrossing.fandom.com/wiki/K.K._Slider_song_list_(New_Horizons)');
 $crawler = $browser->getCrawler();
-$ol = $crawler->filter('ol');
+$tds = $crawler->filter('table.roundy')->eq(1)->filter('td');
+
+$url_data = fn($url) => strpos($url, 'data:') !== 0;
 
 $rows = [];
 
-foreach ($ol->filter('li') as $li) {
-    $li = new Crawler($li);
+foreach ($tds as $td) {
+    $td = new Crawler($td);
 
-    $name = $li->text();
+    $name = $td->filter('a')->eq(1)->text();
 
-    $link = 'https://animalcrossing.fandom.com' . $li->filter('a')->eq(0)->extract(['href'])[0];
+    $urls = $td->filter('img')->eq(0)->extract(['src', 'data-src'])[0];
+    $image = empty($urls) ? null : reset(array_filter($urls, $url_data));
 
-    $request = count($li->filter('i')) > 0;
+    $link = 'https://animalcrossing.fandom.com' . $td->filter('a')->eq(1)->extract(['href'])[0];
 
-    $row = (object) compact('name', 'link', 'request');
+    $request = count($td->filter('i')) > 0;
+
+    $row = (object) compact('name', 'image', 'link', 'request');
 
     $rows[] = $row;
 }
 
-echo json_encode($rows);
+echo json_encode($rows, \JSON_PRETTY_PRINT);
