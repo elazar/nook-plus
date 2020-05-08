@@ -10,7 +10,11 @@ $parse_page = function ($page, $category) {
     $browser = new HttpBrowser(HttpClient::create());
     $browser->request('GET', 'https://animalcrossing.fandom.com/wiki/DIY_recipes' . ($page ? '/' . $page : ''));
     $crawler = $browser->getCrawler();
+
     $table = $crawler->filter('table.article-table')->eq(0);
+    if (!count($table)) {
+        $table = $crawler->filter('table.roundy')->eq(2);
+    }
 
     $url_data = fn($url) => strpos($url, 'data:') !== 0;
 
