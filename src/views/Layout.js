@@ -9,6 +9,7 @@ const pages = [
     { path: "/recipes", name: "Recipes" },
     { path: "/furniture", name: "Furniture" },
     { path: "/clothing", name: "Clothing" },
+    { path: "/artwork", name: "Artwork" },
     { path: "/settings", name: "Settings" },
 ];
 
