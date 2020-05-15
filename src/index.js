@@ -3,7 +3,18 @@ const m = require("mithril");
 import "./index.css";
 
 m.route(document.body, "/villagers", {
-    "/villagers": { onmatch: () => import(/* webpackChunkName: "villagers" */ "./views/Villagers") },
+    "/villagers": { onmatch: () => {
+        try {
+            return import(/* webpackChunkName: "villagers" */ "./views/Villagers");
+        } catch (error) {
+            console.log(error);
+            Sentry.captureException(error);
+            return <div>
+                We are having a small problem. It is probably temporary.
+                Care to { m(m.route.Link, { href: "/villagers" }, "try again") }?
+            </div>;
+        }
+    } },
     "/critters": { onmatch: () => import(/* webpackChunkName: "critters" */ "./views/Critters") },
     "/songs": { onmatch: () => import(/* webpackChunkName: "songs" */ "./views/Songs") },
     "/fossils": { onmatch: () => import(/* webpackChunkName: "fossils" */ "./views/Fossils") },
