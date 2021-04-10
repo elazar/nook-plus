@@ -12,6 +12,11 @@ const fish = require("../data/fish.json").map(fish => {;
     return fish;
 });
 
+const seaCreatures = require("../data/seacreatures.json").map(seaCreature => {;
+    seaCreature.type = "sea creature";
+    return seaCreature;
+});
+
 const all = bugs.concat(fish);
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
