@@ -252,6 +252,14 @@ while ($row = fgetcsv($fp)) {
         'Floors',
     ])) {
 
+        // Skip variations
+        $lastIndex = array_key_last($data['furniture']);
+        $lastRow = $data['furniture'][$lastIndex];
+        if ($row['Name'] === $lastRow['name'] && $row['Variation'] !== 'NA') {
+            $data['furniture'][$lastIndex]['variations'] .= ', ' . $row['Variation'];
+            continue;
+        }
+
         $furniture = [
             'name' => $row['Name'],
             'image' => getImage('Ftr', $row['Filename']),
@@ -264,8 +272,8 @@ while ($row = fgetcsv($fp)) {
             $furniture['buy_price'] = (int) $row['Buy'];
         }
 
-        if ($row['Variation'] !== 'NA' && $row['Variation'] !== null) {
-            $furniture['variation'] = $row['Variation'];
+        if ($row['Variation'] !== 'NA') {
+            $furniture['variations'] = $row['Variation'];
         }
 
         if ($row['Body Customize'] === 'Yes') {
