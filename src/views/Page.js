@@ -88,7 +88,7 @@ function Page(config) {
             <div className="flex flex-wrap justify-center">
             { results.map(item => (
                 <div className={ `rounded lg:w-1/${config.columns} flex border-2 shadow-md mb-4 p-2 mr-4` }>
-                    <a href={ item.link }><img loading="lazy" className="image" src={ item.image ? `images/${config.image(item)}/${item.name}.png` : `images/blank.png` } alt={ item.name } /></a>
+                    <a href={ item.link }><img loading="lazy" className="image" src={ item.image ? item.image : `images/blank.png` } alt={ item.name } /></a>
                     <div className="text-left ml-4">
                         <h2 className="name font-bold text-lg mb-2">
                             <a href={ item.link }>{ item.name }</a>

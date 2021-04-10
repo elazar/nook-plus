@@ -16,12 +16,6 @@ Organizational app for players of [Animal Crossing: New Horizons](https://animal
 ./scripts/data.sh
 ```
 
-## Generating Images
-
-```sh
-./scripts/images.sh
-```
-
 ## Generating Icons
 
 ```sh
