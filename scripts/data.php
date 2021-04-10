@@ -256,10 +256,13 @@ while ($row = fgetcsv($fp)) {
             'name' => $row['Name'],
             'image' => getImage('Ftr', $row['Filename']),
             'link' => getLink($section, $row['Internal ID']),
-            'buy_price' => (int) $row['Buy'],
             'sell_price' => (int) $row['Sell'],
             'source' => $row['Source'],
         ];
+
+        if ($row['Buy'] !== 'NFS') {
+            $furniture['buy_price'] = (int) $row['Buy'];
+        }
 
         if ($row['Variation'] !== 'NA' && $row['Variation'] !== null) {
             $furniture['variation'] = $row['Variation'];
