@@ -41,9 +41,9 @@ module.exports = Page({
             display: item => item.source,
         },
         {
-            name: "variation",
+            name: "variations",
             label: "Variations",
-            display: item => item.variation,
+            display: item => item.variations,
         },
     ],
 

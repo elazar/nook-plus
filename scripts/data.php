@@ -54,8 +54,59 @@ function getLink(string $section, string $uniqueId): string
     return $link;
 }
 
-function getImage(string $dir, string $filename): string
+function getImage(string $section, array $row): ?string
 {
+    $dirs = [
+        'Accessories' => 'Ftr',
+        'Art' => 'Ftr',
+        'Bags' => 'Ftr',
+        'Bottoms' => 'Ftr',
+        'Clothing Other' => 'Ftr',
+        'Dress-Up' => 'Ftr',
+        'Fish' => 'Menu',
+        'Floors' => 'Ftr',
+        'Fossils' => 'Ftr',
+        'Headwear' => 'Ftr',
+        'Housewares' => 'Ftr',
+        'Insects' => 'Menu',
+        'Miscellaneous' => 'Ftr',
+        'Music' => 'Ftr',
+        'Other' => 'Menu',
+        'Recipes' => 'DIYRecipe',
+        'Rugs' => 'Ftr',
+        'Sea Creatures' => 'Menu',
+        'Shoes' => 'Ftr',
+        'Socks' => 'Ftr',
+        'Tops' => 'Ftr',
+        'Umbrellas' => 'Ftr',
+        'Villagers' => 'Npc',
+        'Wall-mounted' => 'Ftr',
+        'Wallpaper' => 'Ftr',
+    ];
+    $dir = $dirs[$section];
+
+    $filenames = [
+        'Inventory Filename',
+        'Closet Image',
+        'Filename',
+        'Icon Filename',
+        'DIY Icon Filename',
+    ];
+    $filename = null;
+    foreach ($filenames as $index) {
+        if (!empty($row[$index])) {
+            $filename = $row[$index];
+            if ($index === 'Closet Image') {
+                $dir = 'Closet';
+            }
+            break;
+        }
+    }
+
+    if ($section === 'Music' && strpos($row['Name'], 'Hazure') !== false) {
+        return null;
+    }
+
     return "https://acnhcdn.com/latest/${dir}Icon/$filename.png";
 }
 
@@ -108,14 +159,10 @@ while ($row = fgetcsv($fp)) {
     $row['Name'] = ucfirst($row['Name']);
 
     if (isset($row['Internal ID'])) {
-        $image = $row['Filename'] ?? $row['Icon Filename'] ?? $row['DIY Icon Filename'] ?? null;
-        if (!$image) {
-            continue;
-        }
         $all[$row['Name']] = [
             'name' => $row['Name'],
             'link' => getLink($section, $row['Internal ID']),
-            'image' => getImage('Menu', $image),
+            'image' => getImage($section, $row),
             'source' => $row['Source'],
             'price' => (int) $row['Sell'],
             'always' => $row['Season/Event Exclusive'] !== 'Yes',
@@ -141,7 +188,7 @@ while ($row = fgetcsv($fp)) {
         $data['artwork'][] = [
             'name' => $row['Name'],
             'link' => getLink($section, $row['Internal ID']),
-            'image' => getImage('Ftr', $row['Filename']),
+            'image' => getImage($section, $row),
             'description' => $row['Description'],
             'forgeable' => $row['Genuine'] === 'No',
         ];
@@ -159,7 +206,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['bugs'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Menu', $row['Icon Filename']),
+            'image' => getImage($section, $row),
             'price' => (int) $row['Sell'],
             'location' => $row['Where/How'],
             'hours' => $hours,
@@ -185,16 +232,24 @@ while ($row = fgetcsv($fp)) {
         'Clothing Other',
     ])) {
 
+        // Skip variations
+        $lastIndex = array_key_last($data['clothing']);
+        $lastRow = $data['clothing'][$lastIndex];
+        if ($row['Name'] === $lastRow['name'] && $row['Variation'] !== 'NA') {
+            $data['clothing'][$lastIndex]['variations'] .= ', ' . $row['Variation'];
+            continue;
+        }
+
         $clothing = [
             'name' => $row['Name'],
-            'image' => getImage(isset($row['Closet Image']) ? 'Closet' : 'Ftr', $row['Filename']),
-            'buy_price' => (int) $row['Buy'],
+            'image' => getImage($section, $row),
+            'buy_price' => $row['Buy'] === 'NFS' ? null : (int) $row['Buy'],
             'sell_price' => (int) $row['Sell'],
             'source' => $row['Source'],
         ];
 
-        if ($row['Variation'] !== 'NA' && $row['Variation'] !== null) {
-            $clothing['variation'] = $row['Variation'];
+        if ($row['Variation'] !== 'NA') {
+            $clothing['variations'] = $row['Variation'];
         }
 
         $data['clothing'][] = $clothing;
@@ -212,7 +267,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['fish'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Menu', $row['Icon Filename']),
+            'image' => getImage($section, $row),
             'price' => (int) $row['Sell'],
             'location' => $row['Where/How'],
             'shadow' => $row['Shadow'],
@@ -232,7 +287,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['fossils'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Ftr', $row['Filename']),
+            'image' => getImage($section, $row),
             'price' => (int) $row['Sell'],
             'link' => getLink($section, $row['Internal ID']),
             'category' => $row['Fossil Group'],
@@ -262,7 +317,7 @@ while ($row = fgetcsv($fp)) {
 
         $furniture = [
             'name' => $row['Name'],
-            'image' => getImage('Ftr', $row['Filename']),
+            'image' => getImage($section, $row),
             'link' => getLink($section, $row['Internal ID']),
             'sell_price' => (int) $row['Sell'],
             'source' => $row['Source'],
@@ -307,7 +362,7 @@ while ($row = fgetcsv($fp)) {
         $data['recipes'][] = [
             'name' => $row['Name'],
             'link' => getLink($section, $row['Internal ID']),
-            'image' => getImage('DIYRecipe', $row['DIY Icon Filename']),
+            'image' => getImage($section, $row),
             'materials' => $materials,
             'source' => $row['Source'],
             'price' => (int) $row['Sell'],
@@ -327,7 +382,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['seacreatures'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Menu', $row['Icon Filename']),
+            'image' => getImage($section, $row),
             'price' => (int) $row['Sell'],
             'location' => 'Sea',
             'shadow' => $row['Shadow'],
@@ -347,7 +402,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['songs'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Ftr', $row['Filename']),
+            'image' => getImage($section, $row),
             'link' => getLink($section, $row['Internal ID']),
             'request' => strpos($row['Source Notes'], 'Hidden song - only by request') !== false,
         ];
@@ -363,7 +418,7 @@ while ($row = fgetcsv($fp)) {
 
         $data['villagers'][] = [
             'name' => $row['Name'],
-            'image' => getImage('Npc', $row['Filename']),
+            'image' => getImage($section, $row),
             'personality' => $row['Personality'],
             'species' => $row['Species'],
             'birthday' => \DateTime::createFromFormat('n/j', $row['Birthday'])->format('F j'),
