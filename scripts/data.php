@@ -63,13 +63,30 @@ function getAvailability(array $row): array
 {
     $hours = null;
     $months = ['north' => [], 'south' => []];
+    $parse = fn($hour, $meridiem) => ($hour === 12 && $meridiem === 'AM' ? 0 : $hour) + (substr($meridiem, 0, 1) === 'A' ? 0 : 12);
     foreach (['N' => 'north', 'S' => 'south'] as $abbr => $hemisphere) {
         foreach (['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] as $month) {
             $index = "${abbr}H $month";
             $available = $row[$index] !== 'NA';
             $months[$hemisphere][strtolower($month)] = $available;
             if ($available) {
-                $hours = $row[$index];
+                if ($row[$index] === 'All day') {
+                    $hours = array_fill(0, 24, true);
+                } else {
+                    $ranges = explode('; ', $row[$index]);
+                    $hours = array_fill(0, 24, false);
+                    foreach ($ranges as $range) {
+                        $split = preg_split('/[\s ]+/', $range);
+                        $start = $parse($split[0], $split[1]);
+                        $end = $parse($split[3], $split[4]) - 1;
+                        if ($start > $end) {
+                            $end += 24;
+                        }
+                        foreach (range($start, $end) as $hour) {
+                            $hours[$hour % 24] = true;
+                        }
+                    }
+                }
             }
         }
     }
