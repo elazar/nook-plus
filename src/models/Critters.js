@@ -17,7 +17,7 @@ const seaCreatures = require("../data/seacreatures.json").map(seaCreature => {;
     return seaCreature;
 });
 
-const all = bugs.concat(fish);
+const all = bugs.concat(fish).concat(seaCreatures);
 all.sort((a, b) => a.name > b.name ? 1 : -1);
 
 const StoredList = require("./StoredList");
