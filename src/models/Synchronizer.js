@@ -23,6 +23,7 @@ const Synchronizer = {
             Songs.owned,
             Villagers.residents,
             Villagers.favorites,
+            Villagers.photos,
         ];
 
         const promises = lists
