@@ -3,6 +3,7 @@ const all = require("../data/villagers.json");
 const StoredList = require("./StoredList");
 const residents = StoredList("villagers-residents");
 const favorites = StoredList("villagers-favorites");
+const photos = StoredList("villagers-photos");
 
 const unique = array => array.reduce((unique, element) => unique.indexOf(element) === -1 ? unique.concat([element]) : unique, []);
 
@@ -28,6 +29,8 @@ const Villagers = {
     residents,
 
     favorites,
+
+    photos,
 
     search: params => {
         let results = all;
@@ -62,6 +65,12 @@ const Villagers = {
         if (params.favorite !== null) {
             results = results.filter(
                 villager => favorites.contains(villager.name) === params.favorite
+            );
+        }
+
+        if (params.photo !== null) {
+            results = results.filter(
+                villager => photos.contains(villager.name) === params.photo
             );
         }
 

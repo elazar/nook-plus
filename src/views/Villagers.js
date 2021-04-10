@@ -46,6 +46,11 @@ module.exports = Page({
             label: "Favorite",
             options: [ "Yes", "No" ],
         },
+        {
+            name: "photo",
+            label: "Photo",
+            options: [ "Yes", "No" ],
+        },
     ],
 
     fields: [
@@ -79,6 +84,12 @@ module.exports = Page({
             label: "Favorite",
             onclick: (item, event) => Villagers.favorites.set(item.name, event.target.checked),
             checked: item => Villagers.favorites.contains(item.name),
+        },
+        {
+            name: "photo",
+            label: "Photo",
+            onclick: (item, event) => Villagers.photos.set(item.name, event.target.checked),
+            checked: item => Villagers.photos.contains(item.name),
         },
     ],
 
