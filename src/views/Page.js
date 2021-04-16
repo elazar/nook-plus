@@ -7,7 +7,7 @@ function Page(config) {
     config.image = config.image || (() => config.title.toLowerCase());
     config.columns = (config.columns + 1) || 3;
 
-    const oninit = config.load;
+    const oninit = config.load().then(m.redraw);
 
     const defaultQuery = config.filters.reduce(
         (query, filter) => {
@@ -57,14 +57,17 @@ function Page(config) {
         search();
     };
 
-    const select = (name, label, values) => (
-        <select id={ name } name={ name } onchange={ filter } className="mr-4 ml-4 mt-2 mb-2 p-2 border">
-            <option value="">{ label }</option>
-            { values.map(value => (
-            <option value={ value }>{ value }</option>
-            )) }
-        </select>
-    );
+    const select = (name, label, values, onchange = filter, selected = null) => {
+        const value = selected === null ? {} : { value: selected };
+        return (
+            <select id={ name } name={ name } onchange={ onchange } {...value} className="mr-4 ml-4 mt-2 mb-2 p-2 border">
+                <option value="">{ label }</option>
+                { values.map(value => (
+                <option value={ value }>{ value }</option>
+                )) }
+            </select>
+        );
+    };
 
     const checkbox = (name, label, onclick, checked) => (
         <span className="m-2 whitespace-no-wrap">
@@ -100,12 +103,23 @@ function Page(config) {
                                 { field.format ? field.format(item) : item[field.name] }
                             </div>
                             )) }
-                            { config.checkboxes.map(checkbox => (
+                            { (config.checkboxes || []).map(checkbox => (
                             <div className="pr-2 pt-2 w-1/3 whitespace-no-wrap">
                                 <input type="checkbox" id={ `${checkbox.name}-${item.name}` } onclick={ event => checkbox.onclick(item, event) } checked={ checkbox.checked(item) } />
                                 <label htmlFor={ `${checkbox.name}-${item.name}` } className="ml-2">{ checkbox.label }</label>
                             </div>
                             )) }
+                            { (config.selects || []).map(s => (
+                            <div className="pr-2 pt-2 w-1/3 whitespace-no-wrap">
+                                { select(
+                                    s.name,
+                                    s.label,
+                                    s.values,
+                                    event => s.onchange(item, event),
+                                    s.selected(item)
+                                ) }
+                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

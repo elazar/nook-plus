@@ -10,6 +10,7 @@ const pages = [
     { path: "/furniture", name: "Furniture" },
     { path: "/clothing", name: "Clothing" },
     { path: "/artwork", name: "Artwork" },
+    { path: "/plants", name: "Plants" },
     { path: "/settings", name: "Settings" },
 ];
 

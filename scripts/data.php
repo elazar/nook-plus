@@ -23,6 +23,7 @@ $files = [
     'fish',
     'fossils',
     'furniture',
+    'plants',
     'recipes',
     'seacreatures',
     'songs',
@@ -338,6 +339,21 @@ while ($row = fgetcsv($fp)) {
         }
 
         $data['furniture'][] = $furniture;
+
+    }
+
+    /**
+     * Plants
+     */
+    if ($section === 'Other' && $row['Tag'] === 'Plants') {
+
+        $data['plants'][] = [
+            'name' => $row['Name'],
+            'image' => getImage($section, $row),
+            'price' => (int) $row['Sell'],
+            'source' => $row['Source'],
+            'link' => getLink($section, $row['Internal ID']),
+        ];
 
     }
 
