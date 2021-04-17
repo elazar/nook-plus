@@ -4,7 +4,6 @@ const Layout = require("./Layout");
 function Page(config) {
     let { results } = config;
 
-    config.image = config.image || (() => config.title.toLowerCase());
     config.columns = (config.columns + 1) || 3;
 
     const oninit = config.load().then(m.redraw);

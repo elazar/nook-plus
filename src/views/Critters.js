@@ -17,8 +17,6 @@ module.exports = Page({
 
     search: Critters.search,
 
-    image: item => item.type === "bug" ? "bugs" : "fish",
-
     filters: [
         {
             name: "caught",
@@ -34,6 +32,11 @@ module.exports = Page({
             name: "catchable",
             label: "Catchable",
             options: [ "Yes", "No" ],
+        },
+        {
+            name: "type",
+            label: "Type",
+            options: [ "Bug", "Fish", "Sea" ],
         },
     ],
 

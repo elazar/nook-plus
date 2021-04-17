@@ -3,17 +3,17 @@ const dayjs = require("dayjs");
 const Settings = require("./Settings");
 
 const bugs = require("../data/bugs.json").map(bug => {
-    bug.type = "bug";
+    bug.type = "Bug";
     return bug;
 });
 
 const fish = require("../data/fish.json").map(fish => {;
-    fish.type = "fish";
+    fish.type = "Fish";
     return fish;
 });
 
 const seaCreatures = require("../data/seacreatures.json").map(seaCreature => {;
-    seaCreature.type = "sea creature";
+    seaCreature.type = "Sea";
     return seaCreature;
 });
 
@@ -88,6 +88,10 @@ const Critters = {
         if (params.catchable !== null) {
             const catchable = params.catchable && "Yes" || "No";
             results = results.filter(critter => Critters.catchable(critter).indexOf(catchable) !== -1);
+        }
+
+        if (params.type !== null) {
+            results = results.filter(critter => critter.type === params.type);
         }
 
         return results;
