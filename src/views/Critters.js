@@ -29,6 +29,11 @@ module.exports = Page({
             options: [ "Yes", "No" ],
         },
         {
+            name: "made",
+            label: "Made",
+            options: [ "Yes", "No" ],
+        },
+        {
             name: "catchable",
             label: "Catchable",
             options: [ "Yes", "No" ],
@@ -81,6 +86,12 @@ module.exports = Page({
                 Critters.donated.set(item.name, checked);
             },
             checked: item => Critters.donated.contains(item.name),
+        },
+        {
+            name: "made",
+            label: "Made",
+            onclick: (item, event) => Critters.made.set(item.name, event.target.checked),
+            checked: item => Critters.made.contains(item.name),
         },
     ],
 

@@ -23,6 +23,7 @@ all.sort((a, b) => a.name > b.name ? 1 : -1);
 const StoredList = require("./StoredList");
 const caught = StoredList("critters-caught");
 const donated = StoredList("critters-donated");
+const made = StoredList("critters-made");
 
 const pluralize = (quantity, unit) => `${quantity} ${unit}${quantity === 1 ? "" : "s"}`;
 
@@ -32,6 +33,8 @@ const Critters = {
     caught,
 
     donated,
+
+    made,
 
     catchable: critter => {
         const hemisphere = Settings.get("hemisphere");
@@ -82,6 +85,12 @@ const Critters = {
         if (params.donated !== null) {
             results = results.filter(
                 critter => donated.contains(critter.name) === params.donated
+            );
+        }
+
+        if (params.made !== null) {
+            results = results.filter(
+                critter => made.contains(critter.name) === params.made
             );
         }
 

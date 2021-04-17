@@ -17,6 +17,7 @@ const Synchronizer = {
             Crafting.need,
             Critters.caught,
             Critters.donated,
+            Critters.made,
             Fossils.donated,
             Furniture.need,
             Recipes.need,
