@@ -12,7 +12,7 @@
  * DEVELOPMENT NOTES:
  *
  * Easy way to check links:
- * cat src/data/artwork.json | jq '.' | grep link | awk '{print $2}' | sed 's/[",]\|#.\+$//g' | uniq | while read url; do curl -o /dev/null -s -w "%{url_effective} %{http_code}\n" $url; done | grep -v 200
+ * cat src/data/artwork.json | jq '.' | grep '"link"' | awk '{print $2}' | sed 's/[",]\|#.\+$//g' | uniq | while read url; do curl -o /dev/null -s -w "%{url_effective} %{http_code}\n" $url; done | grep -v 200
  */
 
 $files = [
