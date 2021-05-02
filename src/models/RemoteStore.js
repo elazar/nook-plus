@@ -1,5 +1,5 @@
 const m = require("mithril");
-const BASE_URL = "https://nook-plus.matthewturland.com:80";
+const BASE_URL = "https://nook-plus.matthewturland.com/api";
 const request = (url, options) => m.request(`${BASE_URL}${url}`, options);
 
 const RemoteStore = {
