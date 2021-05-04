@@ -3,6 +3,7 @@ const Crafting = require("./Crafting");
 const Critters = require("./Critters");
 const Fossils = require("./Fossils");
 const Furniture = require("./Furniture");
+const Plant = require("./Plant");
 const Recipes = require("./Recipes");
 const RemoteStore = require("./RemoteStore");
 const Settings = require("./Settings");
@@ -20,6 +21,7 @@ const Synchronizer = {
             Critters.made,
             Fossils.donated,
             Furniture.need,
+            Plant.quantity,
             Recipes.need,
             Songs.owned,
             Villagers.residents,
