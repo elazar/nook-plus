@@ -5,16 +5,7 @@ const StoredList = key => {
 
     let list = [];
 
-    const set = (value, add) => {
-        list = add ? list.concat([value]) : list.filter(existing => existing !== value);
-        localStorage.setItem(key, JSON.stringify(list));
-
-        const id = Settings.get("user_id");
-        if (id) {
-            const method = add ? "addValue" : "removeValue";
-            RemoteStore[method](id, key, value);
-        }
-    };
+    const save = () => localStorage.setItem(key, JSON.stringify(list));
 
     return {
 
@@ -22,9 +13,10 @@ const StoredList = key => {
             const id = Settings.get("user_id");
             const promise = id
                 ? RemoteStore.getValues(id, key)
-                    .then(values => values.forEach(
-                        value => set(value, true)
-                    ))
+                    .then(values => {
+                        list = values;
+                        save();
+                    })
                 : Promise.resolve();
 
             return promise.then(() => {
@@ -37,7 +29,16 @@ const StoredList = key => {
             return list.indexOf(value) !== -1;
         },
 
-        set,
+        set: (value, add) => {
+            list = add ? list.concat([value]) : list.filter(existing => existing !== value);
+            save();
+
+            const id = Settings.get("user_id");
+            if (id) {
+                const method = add ? "addValue" : "removeValue";
+                RemoteStore[method](id, key, value);
+            }
+        },
 
         get: () => list.slice(0),
 

@@ -5,19 +5,7 @@ const StoredMap = key => {
 
     let map = {};
 
-    const set = (mkey, mvalue) => {
-        const id = Settings.get("user_id");
-        if (id) {
-            if (map[mkey]) {
-                RemoteStore.removeValue(id, key, `${mkey}|${map[mkey]}`);
-            }
-            RemoteStore.addValue(id, key, `${mkey}|${mvalue}`);
-        }
-
-        map[mkey] = mvalue;
-
-        localStorage.setItem(key, JSON.stringify(map));
-    };
+    const save = () => localStorage.setItem(key, JSON.stringify(map));
 
     return {
 
@@ -25,10 +13,13 @@ const StoredMap = key => {
             const id = Settings.get("user_id");
             const promise = id
                 ? RemoteStore.getValues(id, key)
-                    .then(values => values.forEach(value => {
-                        [mkey, mvalue] = value.split('|');
-                        set(mkey, mvalue);
-                    }))
+                    .then(values => {
+                        values.forEach(value => {
+                            [mkey, mvalue] = value.split('|');
+                            map[mkey] = mvalue;
+                        });
+                        save();
+                    })
                 : Promise.resolve();
 
             return promise.then(() => {
@@ -37,7 +28,19 @@ const StoredMap = key => {
             });
         },
 
-        set,
+        set: (mkey, mvalue) => {
+            const id = Settings.get("user_id");
+            if (id) {
+                if (map[mkey]) {
+                    RemoteStore.removeValue(id, key, `${mkey}|${map[mkey]}`);
+                }
+                RemoteStore.addValue(id, key, `${mkey}|${mvalue}`);
+            }
+
+            map[mkey] = mvalue;
+
+            save();
+        },
 
         get: () => Object.assign({}, map),
 
