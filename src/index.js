@@ -1,11 +1,14 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 const m = require("mithril");
 
 import "./index.css";
 
 m.route(document.body, "/villagers", {
-    "/villagers": { onmatch: () => {
+    "/villagers": { onmatch: async () => {
         try {
-            return import(/* webpackChunkName: "villagers" */ "./views/Villagers");
+            return await import(/* webpackChunkName: "villagers" */ "./views/Villagers");
         } catch (error) {
             console.log(error);
             Sentry.captureException(error);
