@@ -9,6 +9,7 @@ module.exports = Page({
     load: () => Promise.all([
         Villagers.residents.load(),
         Villagers.favorites.load(),
+        Villagers.photos.load(),
     ]),
 
     results: Villagers.all(),
