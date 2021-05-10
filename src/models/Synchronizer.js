@@ -1,3 +1,4 @@
+const Artwork = require("./Artwork");
 const Clothing = require("./Clothing");
 const Crafting = require("./Crafting");
 const Critters = require("./Critters");
@@ -14,6 +15,7 @@ const Synchronizer = {
     synchronize: () => {
         const id = Settings.get("user_id");
         const lists = [
+            Artwork.donated,
             Clothing.need,
             Crafting.need,
             Critters.caught,
